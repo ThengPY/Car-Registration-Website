@@ -367,7 +367,7 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     </div>
                 </div>
             </div>
-                <div class="col-lg-6"><img src="img/review.svg" class="img-fluid d-block mx-auto my-auto pt-1" alt="review" width="56%"></div>
+                <div class="col-lg-6 d-none d-lg-block mt-sm-5"><img src="img/review.svg" class="img-fluid d-block mx-auto my-auto pt-1" alt="review" width="56%"></div>
 
         </div>
 

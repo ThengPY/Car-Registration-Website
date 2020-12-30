@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');*/
 
 html, body {
     scroll-behavior: smooth;
@@ -29,33 +25,11 @@ p {
     /*background-attachment: fixed;*/
     background-size: cover;
     background-repeat: no-repeat;
-    /*animation: background 16s infinite ease-in-out 1s;*/
     position: relative;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, .35);
     margin-bottom: 2rem;
     /*overflow-x: hidden!important;*/
 }
-
-/* BACKGROUND ANIMATION */
-/*@keyframes backgound {
-    25% {
-        background-image: url('img/bg-img-1.jpg');
-    }
-    50% {
-        background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/60/46/YrSnz7.jpg');
-    }
-    75% {
-        background-image: url('img/bg-img-4.jpg');
-    }
-}*/
-/*
-#register {
-    background-image : url('img/bg-2.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0!important;
-}*/
 
 /* NAVIGATION BAR */
 .navbar-dark {
@@ -82,6 +56,10 @@ p {
 .active {
     color: #4feaff!important;
     border-bottom: 1px solid #4feaff;
+}
+
+.nav-item:hover .nav-link.active {
+    pointer-events: none;
 }
 
 .navbar {
@@ -137,11 +115,9 @@ select.goog-te-combo {
 
 .hero h1{
     font-family: 'Montserrat', sans-serif;
-    /*font-size: 4.3rem!important;*/
     font-weight: 400!important;
     text-align: center!important;
     letter-spacing: .4rem;
-    /*text-shadow: .2rem .23rem rgba(255, 255, 255, .2);*/
 }
 
 .hero p{
@@ -150,7 +126,6 @@ select.goog-te-combo {
 
 /* PROMOTION */
 #promotion {
-    /*font-family: 'Russo One', sans-serif;*/
     font-size: 2.7rem!important;
 }
 
@@ -221,56 +196,10 @@ input[name="radio1"]{
     visibility:hidden;
 }
 
-/*input[name="radio1"]:checked #card-1{
-    border: .25rem solid #007bff!important;
-    pointer-events: none;
-}*/
-/*
-.disable {
-    pointer-events: none;
-}*/
-
-/* CARD  ICON ANIMATION */
-/*#card-2:hover #comingSoon{
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-	 animation: wobble-hor-bottom 0.8s both 2!important;  
-}*/
-@keyframes wobble-hor-bottom {
-    0%,
-    100% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-    }
-    15% {
-      -webkit-transform: translateX(-30px) rotate(-6deg);
-              transform: translateX(-30px) rotate(-6deg);
-    }
-    30% {
-      -webkit-transform: translateX(15px) rotate(6deg);
-              transform: translateX(15px) rotate(6deg);
-    }
-    45% {
-      -webkit-transform: translateX(-15px) rotate(-3.6deg);
-              transform: translateX(-15px) rotate(-3.6deg);
-    }
-    60% {
-      -webkit-transform: translateX(9px) rotate(2.4deg);
-              transform: translateX(9px) rotate(2.4deg);
-    }
-    75% {
-      -webkit-transform: translateX(-6px) rotate(-1.2deg);
-              transform: translateX(-6px) rotate(-1.2deg);
-    }
-  }
-
     /* Customer review */
     #customer-review-card {
         pointer-events: none!important;
     }
-
-
 
   /* CONTACT */
   #contact-img {
@@ -303,9 +232,11 @@ input[name="radio1"]{
   }
   .fab {
     color: #007bff!important;
+    transition: .15s ease;
   }
   .fab:hover {
-      opacity: .6;
+      transform: translateY(-3px);
+      opacity: .85;
   }
   #contact-link {
       color: black;
@@ -328,15 +259,8 @@ input[name="radio1"]{
         #promotion {
         font-size: 2.1rem!important;
     }
-      /*#supernova-about.fas .fa-asterisk {
-                display: none!important;
-            }*/
 }
-/*@media screen and (max-width: 540px) { 
-    .hero h1 {
-        font-size: 3rem!important;
-    }
-}*/
+
 
 /* Small devices (landscape phones, less than 768px)*/
 @media screen and (min-width: 768px) { 
@@ -348,17 +272,6 @@ input[name="radio1"]{
     }
  }
 
-/* Medium devices (tablets, less than 992px)*/
-/*@media screen and (max-width: 991px) { 
-s*/
-
-
-/* Large devices (desktops, less than 1200px)*/
-/*@media screen and (max-width: 1199px) { 
-
- }*/
- 
- 
 @media screen and (max-width: 480px){
      .hero h1 {
         font-size: 1.9rem!important;
