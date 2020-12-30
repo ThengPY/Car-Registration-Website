@@ -83,6 +83,7 @@ p {
     color: #4feaff!important;
     border-bottom: 1px solid #4feaff;
 }
+
 .navbar {
     opacity: 1;
     transition: opacity 0.5s ease;
